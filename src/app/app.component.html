@@ -17,6 +17,8 @@
     [listOfItems]="personList"
   ></app-nice-list>
 
-  <button (click)="onButtonClicked()">Click me</button>
-
+  <hr />
+  <input type="text" [(ngModel)]="name" placeholder="Enter your name here..."/>
+  <hr />
+  <button (click)="onButtonClicked()">{{buttonText}}</button>
 </div>

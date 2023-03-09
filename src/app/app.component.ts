@@ -12,6 +12,8 @@ export class AppComponent implements OnInit {
   fruitList = ['Apple', 'Banana', 'Orange'];
   vegatableList = ['Cucumber', 'Salad', 'Tomato'];
   personList: string[] = [];
+  name = '';
+  buttonText = 'Click me'
 
   constructor(private personApiService: PersonApiService) {}
 
@@ -37,5 +39,6 @@ export class AppComponent implements OnInit {
 
   onButtonClicked() {
     console.log('Someone clicked.');
+    this.buttonText = `${this.name} clicked me!`;
   }
 }
