@@ -1,0 +1,7 @@
+<div [ngClass]="[backgroundColorClass]" class="nice-list">
+  <h3>{{ titleOfList }}</h3>
+
+  <ul>
+    <li *ngFor="let item of listOfItems">{{ item }}</li>
+  </ul>
+</div>
